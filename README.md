@@ -1,22 +1,22 @@
-Project Title: 
+# Project Title: 
 
 Student Record Printer.
 
-Getting Started: 
+# Getting Started: 
 
 Setting up and installing this software is easy by just installing Java.
 
-Prerequisites:
+# Prerequisites:
 
-Softwares needed:
+**Softwares needed:**
 1.	Java.
 
-Installation links of the required softwares:
-1.	Java (JDK): https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html . 
+**Installation links of the required softwares:**
+1.	Java (JDK): <https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html>
 
-Installing required softwares:
+# Installing required softwares:
 
-For Windows users:
+**For Windows users:**
 1.	Download Java SE Development Kit (JDK) v13.0.1 from the above given link and install it like any other Windows software (note the directory of installation of JDK).
 2.  After successful installation of JDK (check the installation of JDK by typing 'javac' in the Command Prompt), right click on 'This PC' or 'My Computer' icon on your desktop (make sure that the 'This PC' or 'My Computer' icon is not a shortcut of another application).
 3.  Select the option 'Properties'.
@@ -32,46 +32,65 @@ For Windows users:
     The above command will open the software.
 12. The source code of the project is in the folder labelled as 'Student_Record_Printer'.
 
-For Ubuntu/Debian users:
-1.	Install Java (JDK) by running the following command in terminal: 
+**For Ubuntu/Debian users:**
+1.  Install Java (JDK) by running the following command in terminal: 
+
         sudo apt-get install default-jdk
+
     To check whether Java JDK has been installed correctly or not, run the following command in the terminal: 
+
         java -version.
+
 2.  Now open the terminal and run the following command: 
+    
         sudo update-alternatives --config java 
+
     Copy the path of the Java installation directory.
 3.  Now run the following command in the terminal: 
+
         sudo nano /etc/environment
-4.  Now type the following line in the file: 
-        JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64" [Java path might be different, so change accordingly] and save the file.
+
+4.  Now type the following line in the file (Java path might be different, so change accordingly and save the file): 
+
+        JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+        
 5.  Now run the following command in the terminal: 
-      export PATH=$PATH:$JAVA_HOME/bin
+
+        export PATH=$PATH:$JAVA_HOME/bin
+        
 6.  Now run the following command in the terminal:
-      source /etc/environment
+
+        source /etc/environment
+        
     Running the above command will source the variabl es that we just set.
 7.  Now check Java installation by running the command:
-      java -version
+
+        java -version
+
 8.  Now download the zip of the project from GitHub and then extract it. Under the extracted contents, you will see a .jar file which is the archived (packed) file of the project which is ready to run.
 9.  To run the .jar file, open the the terminal and navigate to the extracted project content's directory and run the following command: 
+
         java -jar Student_Record_Printer.jar
+    
     The above command will open the software.
 
-Following the above installation steps for required softwares will set up an environment to run the Student Record Printer without any hassle.
+**Following the above installation steps for required softwares will set up an environment to run the Student Record Printer without any hassle.**
 
-Running the software:
-For Windows users:
+# Running the software:
+**For Windows users:**
 Open your command prompt and navigate to the project's directory and run the following command:
+
         java -jar Student_Record_Printer.jar
 
-For Ubuntu/Debian users:
+**For Ubuntu/Debian users:**
 Open your terminal and navigate to the project's directory and run the following command:
+
         java -jar Student_Record_Printer.jar
 
-Built with:
+# Built with:
+1.      Java - GUI for the software.
+2.      Java Swing - Java GUI library.
 
-    Java - GUI for the software.
-    Java Swing - Java GUI library.
-
-Author:
+# Author:
 
     Siddhesh Kudtarkar
